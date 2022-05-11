@@ -1,8 +1,18 @@
-.input-text{
+#text-input{
     border: solid 2px black;
     width: 80%;
-    margin: 0 10%;
+    margin: 1rem 10%;
     padding: 0.5rem;
-    height: 100px;
+    height: 150px;
     display: inline-block;
+}
+
+#text-output{
+    border: solid 2px black;
+    width: 80%;
+    margin: 1rem 10%;
+    padding: 0.5rem;
+    height: 150px;
+    display: inline-block;
+    box-shadow: 0.2rem 0.2rem 0.6rem rgb(18, 230, 201);
 }
