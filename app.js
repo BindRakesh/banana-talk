@@ -10,7 +10,7 @@ function constructURL(text){
 
 function errorHandler(error){
     console.log("Some error occured", error);
-    // window.alert("Some error occured", error);
+    window.alert("Some error occured.. please try after some time", error);
 
 }
 
