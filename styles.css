@@ -1,18 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+
+* {
+    margin: 0;
+}
+
+
+:root {
+    --primary: #F2C94C;
+    --black: #333333;
+    --width-break:600px
+}
+
+
+nav {
+    background-color: var(--primary);
+    text-align: center;
+    margin-top: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Kalam', cursive;
+    color: #333333;
+}
+
 #text-input{
-    border: solid 2px black;
-    width: 80%;
-    margin: 1rem 10%;
+    border: solid 0.5px black;
+    width: 70%;
+    display: block;
+    margin: 1rem auto;
     padding: 0.5rem;
-    height: 150px;
-    display: inline-block;
+    height: 20vh;   
+    box-shadow: 0.2rem 0.2rem 0.6rem #f4e603;
 }
 
 #text-output{
-    border: solid 2px black;
-    width: 80%;
-    margin: 1rem 10%;
+    border: solid 0.5px black;
+    width: 70%;
+    display: block;
+    margin: 1rem auto;
     padding: 0.5rem;
-    height: 150px;
-    display: inline-block;
-    box-shadow: 0.2rem 0.2rem 0.6rem rgb(18, 230, 201);
+    height: 15vh;
+    box-shadow: 0.2rem 0.2rem 0.6rem #f4e603;
+}
+
+.header{
+    background-color: #f4e603;
+    width: 100%;
+    height: 25%;
+}
+
+h1{
+    text-align: center;
+}
+
+
+/* btn css */
+#btn-translate {
+  background-color: var(--primary);
+  border-radius: 12px;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-align: center;
+  transition: 200ms;
+  width: 40%;
+  box-sizing: border-box;
+  border: 0;
+  margin: 0 30%;
+  font-size: 16px;
+  font-family: 'Kalam', cursive;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#btn-translate:not(:disabled):hover,
+#btn-translate:not(:disabled):focus {
+  outline: 0;
+  background: var(--black);
+  background-color: wheat;
+  box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
+}
+
+#btn-translate:disabled {
+  filter: saturate(0.2) opacity(0.5);
+  -webkit-filter: saturate(0.2) opacity(0.5);
+  cursor: not-allowed;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--primary);
+    text-align: center;
+}
+
+footer p {
+    max-width: var(--width-break);
+    margin: auto;
 }
