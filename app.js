@@ -11,7 +11,7 @@ function constructURL(text){
 function errorHandler(error){
     console.log("Some error occured", error);
     window.alert("Some error occured.. please try after some time", error);
-
+    
 }
 
 
@@ -21,13 +21,14 @@ function clickHandler(){
     fetch(urlToFetch)
     .then(response => response.json())
     .then(json => {
-        if(json.error.code == 429){
-            errorText = json.error.message;
-            textOutput.innerHTML = errorText;
-        }else{
+        // if(json.error.code == 429){
+        //     errorText = json.error.message;
+        //     textOutput.innerHTML = errorText;
+        // }else{
+            console.log(json)
             var translatedText = json.contents.translated;
             textOutput.innerHTML = translatedText;    
-        }
+        // }
     })
     .catch(errorHandler)
 }
